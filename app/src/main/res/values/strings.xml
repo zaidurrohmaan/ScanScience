@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Scan Science</string>
+    <string name="masuk">Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

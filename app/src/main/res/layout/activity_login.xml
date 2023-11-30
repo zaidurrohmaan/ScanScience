@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/sc_logo1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="58dp"/>
+
+        <TextView
+            android:id="@+id/tv_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masuk"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="36sp"
+            android:textColor="@color/navy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo_sc"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:textColor="@color/navy"
+            app:layout_constraintStart_toStartOf="@id/et_email"
+            app:layout_constraintTop_toBottomOf="@id/tv_masuk"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/ic_email"
+            android:textColor="@color/navy"
+            android:paddingStart="6dp"
+            android:paddingEnd="4dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:textColor="@color/navy"
+            app:layout_constraintStart_toStartOf="@id/et_email"
+            app:layout_constraintTop_toBottomOf="@id/et_email"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_password"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_password"
+            android:textColor="@color/navy"
+            android:paddingStart="6dp"
+            android:paddingEnd="4dp"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_password"
+            android:layout_marginTop="40dp"
+            android:text="@string/masuk"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_medium"
+            android:backgroundTint="@color/navy"
+            android:width="125dp"
+            android:height="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            android:gravity="center"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:id="@+id/no_akun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/navy"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/belum_punya_akun"/>
+
+            <TextView
+                android:id="@+id/tv_to_masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/daftar"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/green"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
