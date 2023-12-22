@@ -7,7 +7,14 @@ import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
 import com.example.scanscience.R
+import com.example.scanscience.ui.home.HomeActivity
 import com.example.scanscience.ui.login.LoginActivity
+import com.example.scanscience.ui.signup.SignUpActivity
+import com.example.scanscience.utils.UserPreferences
+import com.example.scanscience.utils.dataStore
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 
 @Suppress("DEPRECATION")
 class SplashScreen : AppCompatActivity() {
@@ -20,10 +27,18 @@ class SplashScreen : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
+        val pref = UserPreferences.getInstance(application.dataStore)
+
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this@SplashScreen, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
+            GlobalScope.launch {
+                if (pref.getUserSession().first()) {
+                    startActivity(Intent(this@SplashScreen, HomeActivity::class.java))
+                    finish()
+                } else {
+                    startActivity(Intent(this@SplashScreen, SignUpActivity::class.java))
+                    finish()
+                }
+            }
         }, 2000)
     }
 }

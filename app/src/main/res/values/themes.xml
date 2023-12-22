@@ -3,6 +3,17 @@
     <style name="Base.Theme.ScanScience" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/navy</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="buttonTint">@color/navy</item>
+    </style>
+
+    <style name="ButtonWhite" parent="android:style/Widget.Button">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:backgroundTint">@drawable/custom_btn_white</item>
     </style>
 
     <style name="Theme.ScanScience" parent="Base.Theme.ScanScience" />

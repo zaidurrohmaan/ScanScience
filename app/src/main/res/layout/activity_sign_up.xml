@@ -38,13 +38,13 @@
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nama_lengkap"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_medium"
-            android:textSize="20sp"
+            android:text="@string/nama_lengkap"
             android:textColor="@color/navy"
-            app:layout_constraintStart_toStartOf="@id/et_email"
-            app:layout_constraintTop_toBottomOf="@id/tv_daftar"
-            android:layout_marginTop="8dp" />
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/et_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_daftar" />
 
         <EditText
             android:id="@+id/et_name"
@@ -93,13 +93,13 @@
             android:id="@+id/tv_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/password"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/poppins_medium"
-            android:textSize="20sp"
+            android:text="@string/password"
             android:textColor="@color/navy"
-            app:layout_constraintStart_toStartOf="@id/et_email"
-            app:layout_constraintTop_toBottomOf="@id/et_email"
-            android:layout_marginTop="24dp" />
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/et_password"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
 
         <EditText
             android:id="@+id/et_password"
@@ -160,6 +160,16 @@
                 android:layout_marginStart="4dp"/>
         </LinearLayout>
 
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -11,4 +11,36 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="scan">Scan</string>
+    <string name="beranda">Beranda</string>
+    <string name="profil">Profil</string>
+    <string name="extras">Extras</string>
+    <string name="obyek">Obyek:  </string>
+    <string name="caption">Akhir pekan lalu saya mendaki di Gunung Rinjani dan saya terkejut karena di sana banyak ditemukan jamur.</string>
+    <string name="explore">Explore</string>
+    <string name="kamera">Kamera</string>
+    <string name="pindai">Pindai</string>
+    <string name="galeri">Galeri</string>
+    <string name="ambil_gambar_dari_kamera_atau_galeri_lalu_tekan_pindai">Ambil gambar dari galeri atau kamera lalu tekan Pindai.</string>
+    <string name="gambar_anda_sedang_dianalisis_mohon_tunggu_sebentar">Gambar Anda sedang dianalisis.\nMohon tunggu sebentar...</string>
+    <string name="hasil">Hasil</string>
+    <string name="tambahkan_deskripsi">Tuliskan deskripsi</string>
+    <string name="simpan">Simpan</string>
+    <string name="unggah">Unggah</string>
+    <string name="pastikan_semua_field_terisi">Pastikan semua field terisi</string>
+    <string name="registrasi_berhasil">Registrasi berhasil</string>
+    <string name="terjadi_kesalahan">Terjadi kesalahan. Silakan coba lagi</string>
+    <string name="pastikan_email_password_benar"><![CDATA[Pastikan email & password benar]]></string>
+    <string name="email_atau_password_salah">Email atau password salah</string>
+    <string name="email_is_already_in_use">Email is already in use</string>
+    <string name="email_tidak_tersedia_silakan_gunakan_email_lain">Email tidak tersedia. Silakan gunakan email lain</string>
+    <string name="tekan_lagi_untuk_keluar_aplikasi">tekan lagi untuk keluar aplikasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">Unggahan</string>
+    <string name="tab_text_2">Fakta</string>
+    <string name="eksplorasi">Eksplorasi</string>
+    <string name="fakta_sains">Fakta Sains</string>
+    <string name="definisi">Definisi</string>
 </resources>
